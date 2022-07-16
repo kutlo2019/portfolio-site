@@ -19,6 +19,19 @@
                     <h1>Hi, I'm Kutlo Popo</h1>
                 </div>
 
+                <div id="eyes">
+                    <p style="text-align: center;">Choose a color scheme that suits your eyes: &#128064;</p>
+                </div>
+
+                <div id="theme-options-wrapper">
+                    <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                    <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                    <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                    <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+                </div>
+
+                <p id="settings-note">*Theme settings will be saved for <br> your next visit</p>
+
                 <div class="intro-wrapper">
                     <div class="nav-wrapper">
                         <div class="dots-wrapper">
@@ -27,36 +40,28 @@
                             <div id="dot-3" class="browser-dot"></div>
                         </div>
                         <ul id="navigation">
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#contact-form">Contact</a></li>
                         </ul>
                     </div>
                     <div class="left-column">
-                        <img id="profile_pic" src="images/kutlo.png" alt="Profile picture">
-                        <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
-
-                        <div id="theme-options-wrapper">
-                            <div data-mode="light" id="light-mode" class="theme-dot"></div>
-                            <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
-                            <div data-mode="green" id="green-mode" class="theme-dot"></div>
-                            <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
-                        </div>
-
-                        <p id="settings-note">*Theme settings will be saved for <br> your next visit</p>
-                    </div>
-                    <div class="right-column">
                         <div id="preview-shadow">
                             <div id="preview">
                                 <div id="corner-tl" class="corner"></div>
                                 <div id="corner-tr" class="corner"></div>
-                                <h3>What I Do</h3>
+                                <h3 style="text-align: center;">What I Do</h3>
                                 <p>
-                                    Self taught software developer
-                                    who enjoys teaching STEM courses.
+                                    Self taught web developer and graphics 
+                                    designer, with a passion for learning and
+                                    teaching STEM courses.
                                 </p>
                                 <div id="corner-bl" class="corner"></div>
                                 <div id="corner-br" class="corner"></div>
                             </div>
                         </div>
+                    </div>
+                    <div class="right-column">
+                        <img id="profile_pic" src="images/kutlo.png" alt="Profile picture">
+                        <h5 style="text-align: center; line-height: 0;">Full Stack Web Developer</h5>
                     </div>
                 </div>
             </div>
@@ -68,14 +73,24 @@
                 <div class="about-wrapper">
                     <div class="about-me">
                         <h4>More About Me</h4>
-                        <p>I use programming to solve everyday problems</p>
+                        <p>
+                            I use programming to solve problems faced  
+                            by businesses or individuals altogether.
+                            I use JavaScript libraries to build applications
+                            that are <b>responsive</b>, have <b>quick load times</b> 
+                            and <b>dynamic</b>.
+                        </p>
 
-                        <p>During my free time, I am involved in various open source projects.</p>
+                        <p>
+                            During my free time, I play around with GIMP and Illustrator
+                            to create logos and flyers. With the use of figma I make 
+                            designs for the front end of the application.
+                            A part time tutor who is very passionate about Mathematics and Science. 
+                        </p>
 
                         <hr>
 
-                        <h4>TOP SKILLS</h4>
-
+                        <h4>SKILLS</h4>
                         <p>
                             Full stack developer with 
                             a main focus on React 
@@ -83,31 +98,76 @@
                             <a href="resume.pdf" target="_blank">Download Resume</a>
                         </p>
 
-                        <div id="skills">
+                        <h6>Programming Languages</h6>
+                        <div class="skill">
                             <ul>
-                                <li>Python</li>
                                 <li>JavaScript</li>
                                 <li>C/C++</li>
+                            </ul>
+
+                            <ul>
+                                <li>Python</li>
                                 <li>SQL</li>
-                                <li>Ionic & Angular</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="skills">
+
+                        <h6>Libraries and Frameworks</h6>
+                        <div class="skill">
+                            <ul>
+                                <li>Angular</li>
+                                <li>Flask & Django</li>
+                                <li>Bootstrap</li>
+                                <li>Ionic</li>
                             </ul>
 
                             <ul>
                                 <li>Node.js</li>
                                 <li>Express</li>
                                 <li>React</li>
-                                <li>Flask & Django</li>
                                 <li>jQuery</li>
                             </ul>
                         </div>
-                    </div>
 
-                    <div class="social-links">
-                        <img src="images/background-pic.png" alt="Social Image" id="social_img">
+                        <h6>Tools and Platforms</h6>
+                        <div class="skill">
+                            <ul>
+                                <li>Git</li>
+                                <li>Webpack</li>
+                                <li>Digital Ocean</li>
+                                <li>MongoDB</li>
+                            </ul>
+
+                            <ul>
+                                <li>Heroku</li>
+                                <li>Amazon Web Services</li>
+                                <li>Netlify</li>
+                                <li>Bash Scripting</li>
+                            </ul>
+                        </div>
+
+                        <h6>Design</h6>
+                        <div class="skill">
+                            <ul>
+                                <li>Figma</li>
+                                <li>Gimp</li>
+                            </ul>
+
+                            <ul>
+                                <li>Adobe Illustrator</li>
+                                <li>Auto CAD</li>
+                            </ul>
+                        </div>
+
+
+                        <!-- <img src="images/background-pic.png" alt="Social Image" id="social_img"> -->
                         <h3>Find me on LinkedIn and Twitter</h3>
 
-                        <a href="#" target="_blank">LinkedIn: Kutlo Popo</a>
-                        <a href="#" target="_blank">Twitter: Kutlo Popo</a>
+                        <a href="https://www.linkedin.com/in/kutlo-popo-44193b107/" target="_blank">LinkedIn: Kutlo Popo</a>
+                        <a href="https://twitter.com/KutloPopo" target="_blank">Twitter: Kutlo Popo</a>
                     </div>
                 </div>
             </div>
