@@ -313,6 +313,7 @@ h6 {font-size: 16px;}
     -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
     box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    position: relative;
 }
 
 .thumbnail {
@@ -321,6 +322,20 @@ h6 {font-size: 16px;}
     height: 180px;
     object-fit: cover;
     border: 1px solid var(--borderColor);
+}
+
+.shade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 180px;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.75);
+}
+
+.shade:hover {
+    background-color: rgba(0,0,0,0);
 }
 
 .post-preview {
