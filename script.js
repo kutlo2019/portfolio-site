@@ -44,27 +44,36 @@ $(document).ready(function() {
 
     // Animate the hovering of the preview boxes in the posts
     $('.post').hover(function() {
-        console.log();
+        let transition_style = '0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28) 0s';
 
         // Animate the hovering of preview title
         let postPreview = $(this).children('.post-preview');
         postPreview.css({
             'visibility': 'visible',
-            'transition': 'all 0.5s ease-in',
+            'transition': transition_style,
             'z-index': '100'
         });
 
-        let shadow = $(this).children('.shadow');
+        let shade = $(this).children('.shade');
 
-        shadow.css('background-color', 'rgba(0,0,0,0)')
+        console.log(shade.val())
+
+        shade.css({
+            'background-color': 'rgba(0,0,0,0)',
+            'transition': transition_style
+        })
     }, function() {
+        let transition_style = '0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28) 0s';
         $('.post-preview').css({
             'visibility': 'hidden',
-            'transition': 'all 0.5s ease-in'
+            'transition': transition_style
         });
 
-        let shadow = $(this).children('.shadow');
+        let shade = $(this).children('.shade');
         
-        shadow.css('background-color', 'rgba(0,0,0,0.6)')
+        shade.css({
+            'background-color': 'rgba(0,0,0,0.6)',
+            'transition': transition_style
+        })
     });
 });
