@@ -43,8 +43,10 @@ $(document).ready(function() {
     }
 
     // Animate the hovering of the preview boxes in the posts
+
+    let transition_style = '0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28) 0s';
+
     $('.post').hover(function() {
-        let transition_style = '0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28) 0s';
 
         // Animate the hovering of preview title
         let postPreview = $(this).children('.post-preview');
@@ -56,14 +58,11 @@ $(document).ready(function() {
 
         let shade = $(this).children('.shade');
 
-        console.log(shade.val())
-
         shade.css({
             'background-color': 'rgba(0,0,0,0)',
             'transition': transition_style
         })
     }, function() {
-        let transition_style = '0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28) 0s';
         $('.post-preview').css({
             'visibility': 'hidden',
             'transition': transition_style
@@ -75,5 +74,22 @@ $(document).ready(function() {
             'background-color': 'rgba(0,0,0,0.6)',
             'transition': transition_style
         })
+    });
+
+    // Animate the shade on hovering of art
+    $('.art').hover(function() {
+        let shade = $(this).children('.shadow');
+
+        shade.css({
+            'background-color': 'rgba(0,0,0,0)',
+            'transition': transition_style
+        })
+    }, function() {
+        let shade = $(this).children('.shadow');
+        
+        shade.css({
+            'background-color': 'rgba(0,0,0,0.6)',
+            'transition': transition_style
+        });
     });
 });
