@@ -59,6 +59,10 @@ h6 {font-size: 16px;}
     overflow: auto;
 }
 
+.s1 .main-container {
+    margin-bottom: 0;
+}
+
 .s2 {
     background-color: var(--secondaryColor);
     border-bottom: 1px solid var(--borderColor);
@@ -367,10 +371,10 @@ h6 {font-size: 16px;}
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
-    margin: 0px 100px;
+    margin: 0px 80px;
 }
 
-/* Create four equal columns that sits next to each other */
+/* Create two equal columns that sits next to each other */
 .column {
     flex: 50%;
     max-width: 50%;
@@ -447,6 +451,22 @@ h6 {font-size: 16px;}
     border: none;
 }
 
+.socials {
+    text-align: center;
+}
+
+.social-links {
+    width: 50%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+i.bi {
+    width: 50px;
+    font-size: 2em;
+}
+
 @media screen and (max-width: 1200px) {
     .main-container{
         width: 95%;
@@ -474,4 +494,11 @@ h6 {font-size: 16px;}
      #preview {
         width: 280px;
      }
+
+     /* Create column stacks */
+    .column {
+        flex: 100%;
+        max-width: 100%;
+        padding: 0 4px;
+    }
 }
