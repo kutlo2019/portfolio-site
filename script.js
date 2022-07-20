@@ -84,6 +84,10 @@ $(document).ready(function() {
             'background-color': 'rgba(0,0,0,0)',
             'transition': transition_style
         })
+
+        let artPreview = $(this).children('.art-preview');
+        artPreview.css('z-index','100')
+
     }, function() {
         let shade = $(this).children('.shadow');
         
@@ -91,5 +95,8 @@ $(document).ready(function() {
             'background-color': 'rgba(0,0,0,0.6)',
             'transition': transition_style
         });
+
+        let artPreview = $(this).children('.art-preview');
+        artPreview.css('z-index','0')
     });
 });
